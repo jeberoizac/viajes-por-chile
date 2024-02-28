@@ -1,10 +1,16 @@
+/*fuente Raleway y background del Body*/
 body{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
   background-color: black;
 }
-.prueba{
-  border: solid #27a1ac;
-}
+
 
 html {
   scroll-behavior: smooth;
 }
+
+
