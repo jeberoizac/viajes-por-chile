@@ -1,4 +1,8 @@
-.navbar{
-background-color: #27a1ac;
+body{
+  background-color: black;
+}
 
+
+.prueba{
+  border: solid #27a1ac;
 }
