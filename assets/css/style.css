@@ -7,10 +7,8 @@ body{
 
   background-color: black;
 }
-
-
-html {
-  scroll-behavior: smooth;
+img:hover {
+  opacity: 1.0;
+  border: solid #747e76;
 }
-
 
