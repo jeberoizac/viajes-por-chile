@@ -6,12 +6,19 @@
   <meta name="author" content="Jurgen Beroiza C" />
     <meta name="description"  content="Lugares de Chile para viajar"/>
     <meta name="keywords" content="viajes, chile, vacaciones,"/>
-    <script src="https://kit.fontawesome.com/21e7372c04.js" crossorigin="anonymous"></script>
-
+    <!--link iconos-->
+    <script src="https://kit.fontawesome.com/21e7372c04.js" crossorigin="anonymous"></script> 
+    <!--link font Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--link CDN Bootstrap 5.3-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+    <!--link Jquery-->
     
+    <!--link Css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     
   <title>Viajes por Chile</title>
@@ -74,7 +81,7 @@
 <!--Fin de Header-->
 <!--Parrafos con Iconos de Quienes Somos-->
 <section class="container justify-content-center mb-3" id="qs">
-   <h1 class="text-center text-light">¿Quiénes Somos?</h1>
+   <h1 class="text-center text-light my-3">¿Quiénes Somos?</h1>
    <hr class="text-light my-5">
   <div class="row ">
     <!--Parrafo 1-->
@@ -197,7 +204,7 @@
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
         </div>
         <div class="mb-3 "> <!--  no funciona script para mostrar alert -->
-          <button type="submit" class="btn btn-info mb-3 text-light" id="enviarCorreo"
+          <button type="submit" class="btn btn-info mb-3 text-light" id="enviar"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
           data-bs-title="Presion Aqui para confirmar envio.">
@@ -209,60 +216,43 @@
 </section>
 <!--Fin Formulario-->
 <!--Footer-->
-<footer class="bg-info">
-  <div class="row text-center text-light my-3">
+<footer class="bg-info ">
+  <div class="row text-center text-light p-3 m-0">
       <div class="col-md-6">
-        <h1>Viajes Chile</h1>
+        <h1 data-bs-toggle="tooltip" data-bs-placement="top" title="Conozca Chile Con los Mejores!">Viajes Chile</h1>
       </div>
       <!--Iconos Footer-->
-      <div class="col-md-6">
-                 
-          <i class="fa-brands fa-github fa-2x"></i>
-          <i class="fa-brands fa-linkedin fa-2x"></i>
-          <i class="fa-brands fa-square-twitter fa-2x"></i>
-          <i class="fa-brands fa-square-facebook fa-2x"></i>
-      
+      <div class="col-md-6 "> 
+        <a  href="https://jeberoizac.github.io/viajes-por-chile/" data-bs-toggle="tooltip" data-bs-placement="left" title="Visite Nuestra Comunidade de GitGuh">
+          <i class="fa-brands fa-github fa-2x text-light"></i>
+        </a>
+        <a  href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Quiere Trabajar con Nosotros, vea las ofertas disponibles">
+          <i class="fa-brands fa-linkedin fa-2x text-light"></i>
+        </a>
+        <a  href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Enterese de Nuestra Novedades al minuto">
+          <i class="fa-brands fa-square-twitter fa-2x text-light"></i>
+        </a>
+         <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visite Nuestra Pagina de Facebook">
+          <i class="fa-brands fa-square-facebook fa-2x text-light"></i>
+         </a>  
       </div>
-
   </div>
 
 
 </footer>
 
 <!--Finfooter-->
-<script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 3000, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-<script src="https://code.jquery.com/jquery-3.7.1.js" 
-integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <!-- JQUERY cdn-->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-  crossorigin="anonymous">
- </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/j
+query.min.js"></script>
+<script> 
+
+//   <!-- JQUERY cdn-->
+//   <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+//   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+//   crossorigin="anonymous">
+//  </script>
 <!-- bunble-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
 
@@ -272,18 +262,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
  
-<!--    Popper JS -->
- <!--   <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>  -->
-  <!--Bundle-->
-  <!--  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>   --> 
+<script src="/assets/js/scriptJQ.js"></script>
 
   
 </body>
